@@ -1,0 +1,87 @@
+.container {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.post, .pictures, .menu-popup, .ring, .avatar {
+    padding: 10px;
+}
+
+.menu-popup {
+    width: 10px;
+    height: 10px;
+    background: url(../img/google-icons.png) no-repeat 0px -1757px;
+    background-size: 90px;
+}
+
+
+.ring {
+    width: 1px;
+    height: 1px;
+    margin: 9px;
+    background: url(../img/google-icons.png) no-repeat -15px -733px;
+    background-color: grey;
+    background-size: 50px;
+    border-radius: 30px;
+    cursor: pointer;
+    
+}
+
+.container-menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 320px;
+    max-height: 496px;
+    border-color: aqua;
+    border: 1px solid red;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.icons {
+    width: 64px;
+    height: 64px;
+    background: url(../img/google-icons.png);
+    background-size: 92px 2839px;
+    margin: 15px;
+}
+
+#gmail {
+    background-position: 0 -2737px; 
+}
+
+#disk {
+    background-position: 0 -2737px; 
+}
+
+#photo {
+    background-position: 0 -2737px; 
+}
+
+#hangouts {
+    background-position: 0 -2737px; 
+}
+
+#calendar {
+    background-position: 0 -2737px; 
+}
+
+#play {
+    background-position: 0 -2737px; 
+}
+
+.text {
+    margin-top: 55px;
+    text-align: center;
+}
+
+
+.test-image {
+    border-color: aqua;
+    border: 1px solid red;
+    width: 49px;
+    height: 46px;
+    background: url(../img/google-icons.png) no-repeat -7px -351px;
+    background-size: 91px;
+}
