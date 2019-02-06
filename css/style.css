@@ -1,7 +1,7 @@
 .container {
     display: flex;
     justify-content: flex-end;
-    
+    font: small arial,sans-serif;
 }
 
 .post, .pictures, .menu-popup, .ring, .avatar {
@@ -9,34 +9,39 @@
 }
 
 .menu-popup {
+    position: relative;
     width: 10px;
     height: 10px;
     background: url(../img/google-icons.png) no-repeat 0px -1757px;
     background-size: 90px;
+    /* opacity: 0.6; */
 }
 
-
 .ring {
-    width: 1px;
-    height: 1px;
     margin: 9px;
     background: url(../img/google-icons.png) no-repeat -15px -733px;
     background-color: grey;
     background-size: 50px;
     border-radius: 30px;
-    cursor: pointer;
-    
+    /* cursor: pointer; */
 }
 
 .container-menu {
+    position: absolute;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 320px;
     max-height: 496px;
-    border-color: aqua;
-    border: 1px solid red;
+    border: 1px solid #ccc;
     padding: 10px;
     list-style-type: none;
+    top: 44px;
+    right: 0px;
+}
+
+.submenu:hover {
+    border: 1px solid #ccc;
 }
 
 .icons {
@@ -47,41 +52,38 @@
     margin: 15px;
 }
 
+.text {
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
 #gmail {
     background-position: 0 -2737px; 
 }
 
 #disk {
-    background-position: 0 -2737px; 
+    background-position: 0 -519px; 
 }
 
 #photo {
-    background-position: 0 -2737px; 
+    background-position: 0 -1456px; 
 }
 
 #hangouts {
-    background-position: 0 -2737px; 
+    background-position: 0 -104px; 
 }
 
 #calendar {
-    background-position: 0 -2737px; 
+    background-position: 0 -173px; 
 }
 
 #play {
-    background-position: 0 -2737px; 
-}
-
-.text {
-    margin-top: 55px;
-    text-align: center;
+    background-position: 0 -346px; 
 }
 
 
-.test-image {
-    border-color: aqua;
-    border: 1px solid red;
-    width: 49px;
-    height: 46px;
-    background: url(../img/google-icons.png) no-repeat -7px -351px;
-    background-size: 91px;
-}
+
