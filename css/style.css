@@ -76,7 +76,10 @@
 .more {
     position: absolute;
     bottom: 0px;
-    background-color: #ccc;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    background-color: #f5f5f5;
 }
 
 #gmail {
@@ -101,6 +104,22 @@
 
 #play {
     background-position: 0 -346px; 
+}
+
+#youtube {
+    background-position: -25px -2323px; 
+}
+
+#contacts {
+    background-position: 0 -1594px;
+}
+
+#maps {
+    background-position: -21px -1248px; 
+}
+
+#news {
+    background-position: 0 -1974px;
 }
 
 
