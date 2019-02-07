@@ -35,12 +35,15 @@
 
 .container-menu {
     position: absolute;
+    display: flex;
     flex-wrap: wrap;
+    align-content: flex-start;
     justify-content: center;
     box-shadow: 0 2px 10px rgba(0,0,0,.2);
     border-radius: 2px;
+    /* overflow-y: scroll; */
     width: 300px;
-    max-height: 496px;
+    height: 496px;
     border: 1px solid #ccc;
     padding: 10px;
     list-style-type: none;
@@ -68,6 +71,12 @@
     display: inline-block;
     text-decoration: none;
     color: black;
+}
+
+.more {
+    position: absolute;
+    bottom: 0px;
+    background-color: #ccc;
 }
 
 #gmail {
