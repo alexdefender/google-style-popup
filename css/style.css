@@ -1,10 +1,13 @@
 .container {
     display: flex;
     justify-content: flex-end;
+    margin: 15px;
     font: small arial,sans-serif;
 }
 
-.post, .pictures, .menu-popup, .ring, .avatar {
+/*----------- Горизонтальное меню - начало ----------- */
+
+.post, .pictures, .menu-popup, .checkbox, .ring, .avatar {
     padding: 10px;
 }
 
@@ -14,72 +17,104 @@
     height: 10px;
     background: url(../img/google-icons.png) no-repeat 0px -1757px;
     background-size: 90px;
-    /* opacity: 0.6; */
+    cursor: pointer;
 }
 
 .ring {
-    margin: 9px;
-    background: url(../img/google-icons.png) no-repeat -15px -733px;
+    margin: 7px;
+    width: 5px;
+    height: 5px;
+    background: url(../img/google-icons.png) no-repeat -13px -732px;
     background-color: grey;
     background-size: 50px;
     border-radius: 30px;
-    /* cursor: pointer; */
+    cursor: pointer;
 }
-.container-menu, #hider {
+
+#hider, #hider-2 {
     display: none;
 }
 
-#hider:checked ~ .container-menu {
+#hider:checked ~ .nav-items {
     display: flex;
 }
 
-.container-menu {
+#hider-2:checked ~ .more-nav-item {
+    display: block;
+}
+
+#hider-2:checked ~ .more-menu-popup {
+    display: none;
+}
+
+/*----------- Горизонтальное меню - конец ----------- */
+
+/*----------- Первая часть иконок - начало ----------- */
+
+.nav-items {
     position: absolute;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     align-content: flex-start;
-    justify-content: center;
+    width: 280px;
+    height: 496px;
+    top: 44px;
+    right: 10px;
+    border: 1px solid #ccc;
     box-shadow: 0 2px 10px rgba(0,0,0,.2);
     border-radius: 2px;
-    /* overflow-y: scroll; */
-    width: 300px;
-    height: 496px;
-    border: 1px solid #ccc;
-    padding: 10px;
     list-style-type: none;
-    top: 44px;
-    right: -90px;
+    overflow-y: auto;
 }
 
-.submenu:hover {
-    border: 1px solid #ccc;
+.title {
+    text-align: center;
 }
 
-.icons {
+.link-item, .link {
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.more-menu-popup, .other-services {
+    position: absolute;
+    background-color: #f5f5f5;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 13px;
+    text-align: center;
+}
+
+.more ~ .more-menu-popup::before {
+    content: "Ещё";
+}
+
+/*----------- Первая часть иконок - конец ----------- */
+
+/*----------- Вторая часть иконок - начало ----------- */
+
+.more-nav-item {
+    display: none;
+}
+
+.other-services {
+    bottom: -260px;
+    background-color: #ffffff;
+}
+
+/*----------- Вторая часть иконок - конец ----------- */
+
+.icon {
     width: 64px;
     height: 64px;
     background: url(../img/google-icons.png);
     background-size: 92px 2839px;
     margin: 10px;
-}
-
-.text {
-    text-align: center;
-}
-
-.link {
-    display: inline-block;
-    text-decoration: none;
-    color: black;
-}
-
-.more {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    text-align: center;
-    background-color: #f5f5f5;
 }
 
 #gmail {
@@ -121,6 +156,3 @@
 #news {
     background-position: 0 -1974px;
 }
-
-
-
